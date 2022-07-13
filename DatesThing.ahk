@@ -479,6 +479,9 @@ curdy:=curdy+1000000
         GuiControl, MemGUI:, Txt%ND%3, % tasksVar[4]
         GuiControl, MemGUI:, Txt%ND%4, % daysVar[6].tasks
         GuiControl, MemGUI:, Txt%ND%5, % daysVar[13].tasks
+        if (ND=1){
+            GuiControl, MemGUI:, Txt%ND%1, "I like lemons"
+        }
     ND++
     k++
     msgbox Curdy = %curdy%`n dayNumber = %dayNumber%
